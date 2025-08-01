@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documentation - All Set Doc</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/documentation.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav-container">
+            <a href="index.html" class="logo">
+                <div class="logo-icon">ASD</div>
+                All Set Doc
+            </a>
+            <ul class="nav-menu">
+                <li><a href="documentation.html" class="nav-link active">Documentation</a></li>
+                <li><a href="glossary.html" class="nav-link">Glossary</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+            </ul>
+            <a href="#contact" class="cta-button">Contact Dr. Bensen</a>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <div class="container">
+        <div class="page-header">
+            <h1 class="page-title">ICD-10 Documentation Guide</h1>
+            <p class="page-subtitle">Physician's Documentation Prescription 2024</p>
+        </div>
+
+        <!-- Search Section -->
+        <div class="search-section">
+            <div class="search-box">
+                <input type="text" class="search-input" id="searchInput" placeholder="Search conditions, codes, documentation guidelines..." autocomplete="off">
+                <span class="search-icon">🔍</span>
+            </div>
+            <div style="text-align: center; margin-top: 10px; font-size: 14px; color: #5d6d7e;">
+                <kbd>Ctrl</kbd> + <kbd>K</kbd> to focus search
+            </div>
+        </div>
+
+        <!-- ALL SET DOC Guide -->
+        <div class="guide-section">
+            <h2 class="guide-title">ALL SET DOC™ Mnemonic</h2>
+            <p class="guide-subtitle">"Ask yourself if your documentation is ALL SET DOC?"</p>
+            
+            <div class="mnemonic-grid">
+                <div class="mnemonic-card">
+                    <div class="mnemonic-letter">A</div>
+                    <div class="mnemonic-word">Acuity</div>
+                    <div class="mnemonic-description">Acute, chronic, acute on chronic, status</div>
+                </div>
+                <div class="mnemonic-card">
+                    <div class="mnemonic-letter">L</div>
+                    <div class="mnemonic-word">Links</div>
+                    <div class="mnemonic-description">Due to, with, from, in - connect conditions</div>
+                </div>
+                <div class="mnemonic-card">
+                    <div class="mnemonic-letter">L</div>
+                    <div class="mnemonic-word">Laterality</div>
+                    <div class="mnemonic-description">Right, left, bilateral, handedness</div>
+                </div>
+                <div class="mnemonic-card">
+                    <div class="mnemonic-letter">S</div>
+                    <div class="mnemonic-word">Site</div>
+                    <div class="mnemonic-description">Specific anatomical location</div>
+                </div>
+                <div class="mnemonic-card">
+                    <div class="mnemonic-letter">E</div>
+                    <div class="mnemonic-word">Etiology</div>
+                    <div class="mnemonic-description">Cause, organism, underlying condition</div>
+                </div>
+                <div class="mnemonic-card">
+                    <div class="mnemonic-letter">T</div>
+                    <div class="mnemonic-word">Type</div>
+                    <div class="mnemonic-description">Degree, severity, stage, classification</div>
+                </div>
+                <div class="mnemonic-card">
+                    <div class="mnemonic-letter">D</div>
+                    <div class="mnemonic-word">Diagnosis</div>
+                    <div class="mnemonic-description">Complete, specific diagnostic statement</div>
+                </div>
+                <div class="mnemonic-card">
+                    <div class="mnemonic-letter">O</div>
+                    <div class="mnemonic-word">Occurrence</div>
+                    <div class="mnemonic-description">Present circumstances, clinical indicators</div>
+                </div>
+                <div class="mnemonic-card">
+                    <div class="mnemonic-letter">C</div>
+                    <div class="mnemonic-word">Comorbidities</div>
+                    <div class="mnemonic-description">Concurrent conditions, complications</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Results Section -->
+        <div class="results-section">
+            <h2 class="results-title">Documentation Guidelines</h2>
+            <div class="search-stats" id="searchStats">Search above to find specific documentation requirements</div>
+            
+            <div id="searchResults">
+                <!-- Results will be populated by JavaScript -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Fallback data for browsers that don't support modules -->
+    <script>
+        // Embedded fallback data - this ensures the search works even without modules
+        window.documentationData = [
+            {
+                title: "Sepsis Documentation",
+                content: "Link patient appearance, abnormal vital signs and WBC count, and treatment to the sepsis diagnosis. Name a suspected organism based on site of infection and antibiogram. Document 'sepsis despite negative blood culture' to avoid CDI queries. Include qSOFA score when available. Document organ dysfunction for severe sepsis.",
+                severity: ["mcc", "hcc"],
+                tags: ["infection", "critical-care", "high-impact"],
+                keywords: ["sepsis", "severe sepsis", "septic shock", "infection", "bacteremia", "SIRS", "organism", "blood culture", "qSOFA"],
+                code: "R65.-"
+            },
+            {
+                title: "Heart Failure Documentation",
+                content: "Most common CDI query. Must specify both acuity (acute, chronic, acute on chronic) and type (systolic, diastolic, combined). Link to etiology when known. Avoid using 'CHF' alone - insufficient for proper coding. Document complications: pulmonary edema, MI.",
+                severity: ["mcc", "hcc"],
+                tags: ["cardiac", "common-query", "specificity-required"],
+                keywords: ["heart failure", "CHF", "systolic", "diastolic", "acute", "chronic", "HF", "cardiomyopathy", "pulmonary edema"],
+                code: "I50.-"
+            },
+            {
+                title: "Respiratory Failure",
+                content: "Types: Acute hypoxic, acute hypercapnic, or acute hypoxic-hypercapnic (both). Always link to the underlying diagnosis that caused the failure. Include oxygen requirements, respiratory rate, and evidence of distress. Don't use 'insufficiency' when failure criteria met.",
+                severity: ["mcc", "hcc"],
+                tags: ["respiratory", "critical-care", "type-required"],
+                keywords: ["respiratory failure", "hypoxic", "hypercapnic", "oxygen", "ventilator", "ARDS", "respiratory distress", "ARF"],
+                code: "J96.-"
+            },
+            {
+                title: "Diabetes with Complications",
+                content: "Type required: DM1, DM2, gestational, drug-induced, or due to underlying condition. Document each complication separately with full specificity. Common complications: nephropathy (specify CKD stage), retinopathy, neuropathy, ulcers (with site and stage). Include medication status.",
+                severity: ["cc", "hcc"],
+                tags: ["endocrine", "chronic-disease", "multiple-codes"],
+                keywords: ["diabetes", "DM1", "DM2", "diabetic", "insulin", "hyperglycemia", "hypoglycemia", "nephropathy", "retinopathy", "neuropathy"],
+                code: "E08-E13"
+            },
+            {
+                title: "Acute Kidney Injury (AKI)",
+                content: "Document suspected site of necrosis (cortical, medullary, tubular). Link to etiology. Include creatinine values and criteria used for diagnosis. Don't use 'insufficiency' or 'dysfunction' when failure criteria met. AKI present in ~15% of hospitalized patients.",
+                severity: ["cc", "hcc"],
+                tags: ["renal", "nephrology", "acute"],
+                keywords: ["AKI", "acute kidney injury", "renal failure", "ATN", "creatinine", "nephrology", "acute tubular necrosis", "cortical", "medullary"],
+                code: "N17.-"
+            },
+            {
+                title: "Pneumonia Documentation",
+                content: "Think! Is there sepsis? Name suspected organism based on epidemiology, antibiogram, or culture results. Document complications (often the real reason for admission): respiratory failure, sepsis, renal failure. Include POA status. Over 100 codes based on organism.",
+                severity: ["mcc"],
+                tags: ["respiratory", "infection", "organism-required"],
+                keywords: ["pneumonia", "CAP", "HAP", "VAP", "organism", "antibiotic", "respiratory infection", "community acquired", "sepsis"],
+                code: "J12-J18"
+            },
+            {
+                title: "Encephalopathy vs AMS",
+                content: "AMS is a low-severity finding. Encephalopathy is a high-severity diagnosis. Always ask 'Is this encephalopathy?' and document the etiology. Types: septic, metabolic, toxic, hepatic, hypoxic, uremic. Include GCS components for objective measure.",
+                severity: ["mcc"],
+                tags: ["neurology", "often-missed", "high-impact"],
+                keywords: ["encephalopathy", "AMS", "altered mental status", "confusion", "delirium", "GCS", "septic", "metabolic", "toxic", "hepatic"],
+                code: "G93.40"
+            },
+            {
+                title: "Malnutrition Documentation", 
+                content: "Think! Is it severe? Document type (mild, moderate, severe PCM). Link to etiology. Include BMI, cachexia, muscle wasting findings. Often missed diagnosis with significant SOI impact. Registered dietitians can assess, but physician must document findings and term 'malnutrition'.",
+                severity: ["cc", "hcc"],
+                tags: ["nutrition", "often-missed", "dietary"],
+                keywords: ["malnutrition", "PCM", "protein calorie", "severe", "moderate", "mild", "cachexia", "BMI", "wasting", "nutrition"],
+                code: "E40-E46"
+            },
+            {
+                title: "Uncertain Diagnoses Guidelines",
+                content: "For inpatients: 'suspected,' 'probable,' 'likely' acceptable. For all patients: 'evidence of [diagnosis] includes...' followed by clinical indicators. Best practice: Use 'evidence of' terminology consistently - works universally and prevents queries.",
+                severity: [],
+                tags: ["documentation-guidelines", "query-prevention", "universal-use"],
+                keywords: ["uncertain", "suspected", "probable", "likely", "evidence of", "differential diagnosis", "clinical indicators", "query prevention"],
+                code: "N/A"
+            },
+            {
+                title: "ALL SET DOC Mnemonic",
+                content: "Comprehensive documentation framework: Acuity, Links, Laterality, Site, Etiology, Type, Diagnosis, Occurrence, Comorbidity/Complications. Use this checklist for every diagnosis to ensure complete documentation and prevent CDI queries.",
+                severity: [],
+                tags: ["mnemonic", "framework", "comprehensive"],
+                keywords: ["ALL SET DOC", "mnemonic", "acuity", "laterality", "etiology", "comorbidity", "documentation framework", "checklist", "CDI"],
+                code: "N/A"
+            }
+        ];
+    </script>
+
+    <!-- Load modular JavaScript -->
+    <script type="module" src="js/search.js"></script>
+    
+    <!-- Fallback for non-module browsers -->
+    <script nomodule src="js/search-legacy.js"></script>
+</body>
+</html>
