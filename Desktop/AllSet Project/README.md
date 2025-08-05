@@ -95,4 +95,4 @@ This project is proprietary and all rights are reserved. Please contact the deve
 ## ACKNOWLEDGEMENTS:
 - Medical Community Insights: Built with feedback from practicing physicians
 - ICD-10 Expertise: Developed in collaboration with Dr. Bensen, co-patent holder and official diagnosis code documentation expert
-- Family Legacy: Inspired by generations of medical professionals
+- Family Legacy: Inspired by generations of medical professionals 
