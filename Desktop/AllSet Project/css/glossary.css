@@ -5,18 +5,25 @@ body {
     padding-top: 70px;
 }
 
-/* Page Header */
+/* Page Header - MAXIMUM WHITE TEXT OVERRIDE */
 .page-header {
-    background: linear-gradient(135deg, var(--primary-dark) 0%, var(--secondary-dark) 100%);
-    color: white;
+    background: linear-gradient(135deg, var(--primary-dark) 0%, var(--secondary-dark) 100%) !important;
+    color: #ffffff !important;
     padding: var(--spacing-xxl) 0;
     text-align: center;
+}
+
+.page-header *,
+.page-header *:before,
+.page-header *:after {
+    color: #ffffff !important;
 }
 
 .page-header-content {
     max-width: 800px;
     margin: 0 auto;
     padding: 0 var(--spacing-xl);
+    color: #ffffff !important;
 }
 
 .page-title {
@@ -24,6 +31,7 @@ body {
     font-weight: 700;
     margin-bottom: var(--spacing-md);
     font-family: var(--font-serif);
+    color: #ffffff !important;
 }
 
 .page-subtitle {
@@ -31,6 +39,28 @@ body {
     opacity: 0.9;
     line-height: 1.6;
     margin: 0;
+    color: #ffffff !important;
+}
+
+/* Ultra-specific targeting for header text - NUCLEAR OPTION */
+section.page-header h1,
+section.page-header p,
+section.page-header h1.page-title,
+section.page-header p.page-subtitle,
+.page-header .page-header-content h1,
+.page-header .page-header-content p,
+.page-header .page-header-content .page-title,
+.page-header .page-header-content .page-subtitle,
+.page-header .container h1,
+.page-header .container p {
+    color: #ffffff !important;
+    text-shadow: none !important;
+}
+
+/* In case there are inline styles or other overrides */
+.page-header .fade-in h1,
+.page-header .fade-in p {
+    color: #ffffff !important;
 }
 
 /* Search and Filter Section */
@@ -456,10 +486,12 @@ mark {
 @media (max-width: 768px) {
     .page-title {
         font-size: 2rem;
+        color: #ffffff !important;
     }
     
     .page-subtitle {
         font-size: 1.1rem;
+        color: #ffffff !important;
     }
     
     .search-filter-container {
@@ -557,6 +589,11 @@ mark {
     
     .page-title {
         font-size: 1.7rem;
+        color: #ffffff !important;
+    }
+    
+    .page-subtitle {
+        color: #ffffff !important;
     }
     
     .mnemonic-card {
