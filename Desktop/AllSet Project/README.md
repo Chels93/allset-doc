@@ -1,6 +1,6 @@
 # ALL SET DOC ? - A Physician's Assistant App
 
-## OVEARVIEW:
+## OVERVIEW:
 A comprehensive mobile application designed specifically for physicians to streamline diagnosis code lookup 
 This mobile application provides physicians with a powerful toolkit that combines an intelligent diagnosis code catalog with essential daily management features. Built with insights from medical professionals and direct access to ICD-10 expertise, the app addresses real-world needs in medical practice.
 
@@ -96,3 +96,4 @@ This project is proprietary and all rights are reserved. Please contact the deve
 - Medical Community Insights: Built with feedback from practicing physicians
 - ICD-10 Expertise: Developed in collaboration with Dr. Bensen, co-patent holder and official diagnosis code documentation expert
 - Family Legacy: Inspired by generations of medical professionals <!-- Updated Tue Aug  5 09:30:54 EDT 2025 -->
+
